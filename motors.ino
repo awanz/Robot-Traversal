@@ -41,17 +41,17 @@ void halt(){
 void backward(int powerLevel){
   motorEn(powerLevel);
   analogWrite (E1,powerLevel);      //PWM Speed Control
-  digitalWrite(M1,LOW);    
+  digitalWrite(M1,HIGH);    
   analogWrite (E2,powerLevel);    
-  digitalWrite(M2,LOW);
+  digitalWrite(M2,HIGH);
 }
 
 void forward(int powerLevel){
   motorEn(powerLevel);
   analogWrite (E1,powerLevel);
-  digitalWrite(M1,HIGH);   
+  digitalWrite(M1,LOW);   
   analogWrite (E2,powerLevel);    
-  digitalWrite(M2,HIGH);
+  digitalWrite(M2,LOW);
 }
 
 

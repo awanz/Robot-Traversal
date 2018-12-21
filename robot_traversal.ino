@@ -19,7 +19,7 @@ void setup() {
   Serial.println("Start Robot Kelompok 2");
   initMotors();
   irservo.attach(Svo_Pin);
-  irservo.write(85);
+  irservo.write(70);
 }
 
 void loop() {
